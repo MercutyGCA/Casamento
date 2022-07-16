@@ -2,7 +2,7 @@
     <h1>Listagem de Produtos</h1>
     <hr>
 
-    <a href="<?= baseUrl() . "c=produto&m=add" ?>" class="btn btn-success">Inserir Produto</a>
+    <a href="<?= baseUrl() . "?c=produto&m=add" ?>" class="btn btn-success">Inserir Produto</a>
     <table class="table table-hover ">
         <thead>
             <tr>

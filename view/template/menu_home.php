@@ -2,23 +2,19 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="<?= baseUrl() . "?c=home" ?>">Menu</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <?php foreach ($categorias as $categoria) : ?>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?= baseUrl() . "?c=home&m=index&id=" . $categoria['idCategoria'] ?>"><?= $categoria['nome'] ?></a>
+            <a style="color: gold" class="nav-link active" aria-current="page" href="<?= baseUrl() . "?c=home&m=index&id=" . $categoria['idCategoria'] ?>"><b><?= $categoria['nome'] ?></b></a>
           </li>
         <?php endforeach; ?>
         <li class=" nav-item">
-          <a class="nav-link" aria-current="page" href="<?= baseUrl() . "?c=restrito&m=login" ?>">Acesso Restrito</a>
+          <a style="color: gold" class="nav-link" aria-current="page" href="<?= baseUrl() . "?c=restrito&m=login" ?>"><b>Acesso Restrito</b></a>
         </li>
       </ul>
       <form class="d-flex" method="POST" action="<?= baseUrl() . "?c=home&m=search" ?>">
-        <input class="form-control me-2" type="search" placeholder="Perquisar" aria-label="Search" name="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" name="search">
         <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
     </div>

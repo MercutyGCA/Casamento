@@ -9,8 +9,8 @@
         </div>
 
         <div class="mb-3">
-            <label for="descricao" class="form-label">Descrição</label>
-            <textarea class="form-control" id="descricao" name="descricao"><?= $produto['descricao'] ?? "" ?></textarea>
+            <label for="descricao" class="form-label">Link do Produto</label>
+            <input type="text" class="form-control" id="descricao" name="descricao" value="<?= $produto['descricao'] ?? "" ?>">
         </div>
 
         <div class="mb-3">
@@ -19,7 +19,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="marca" class="form-label">Marca</label>
+            <label for="marca" class="form-label">Nome do Site</label>
             <input type="text" class="form-control" id="marca" name="marca" value="<?= $produto['marca'] ?? "" ?>" required>
         </div>
 
