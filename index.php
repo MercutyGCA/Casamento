@@ -1,5 +1,5 @@
 <?php
-$baseUrl = "http://localhost/casamento/index.php";
+$baseUrl = "http://listadepresente.epizy.com/index.php";
 $controlador_padrao = 'home';
 $controller = ucfirst($_GET['c'] ?? $controlador_padrao);
 $path_controller = "controller/$controller.php";

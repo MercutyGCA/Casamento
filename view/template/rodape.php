@@ -1,19 +1,26 @@
 <!-- Footer : Rodapé -->
 
-<footer class="container-fluid pt-4 pb-5" style="background-color: black;">
+<footer class="container-fluid pt-4 pb-5" style="background-color: indianred;">
   <div id="ind">
-    <p class="text-white text-center">Site desenvolvido por: <b style="color: gold">Guilherme C. Araujo</b><br>
-      <a target="_blank" style="text-decoration: none; color: gold; border: 1px solid #c0c0c0; border-radius: 5px; padding: 2px; margin-top: 1%; " href=""><i class="fa-solid fa-shop"> Encomende seu site</i></a>
+    <p class="text-white text-center">Site desenvolvido por: <b style="color: white">Guilherme C. Araujo</b><br>
+      <a target="_blank" style="text-decoration: none; color: white; margin-top: 1%; " href=""><i class="fa-solid fa-shop"> Encomende seu site</i></a>
     </p>
   </div>
   <style>
     #ind {
       padding-top: 1%;
       border: 3px solid;
-      border-color: #FFD700;
+      border-color: white;
       border-radius: 10px;
       margin-left: 35%;
       margin-right: 35%;
+    }
+
+    @media screen and (max-width: 600px) {
+      #ind {
+        margin: 0%;
+        border: 0px;
+      }
     }
   </style>
 </footer>

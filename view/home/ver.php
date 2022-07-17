@@ -3,24 +3,20 @@
 <div class="container mt-2">
     <div class="row">
         <div class="col-6">
-            <img width="100%" src="<?= $produto['foto'] ?>" alt="..." style="border: 3px solid gold; border-radius: 5px;">
+            <img width="100%" src="<?= $produto['foto'] ?>" alt="..." style="border: 3px solid indianred; border-radius: 5px;">
         </div>
 
         <div class="col-6">
-            <script src="Scripts/endereco.js"></script>
+            <script src="scripts/endereco.js"></script>
             <h4><?= $produto['nome'] ?></h4>
             <h5>R$ <?= $produto['preco'] ?></h5>
             <hr style="color: black">
             <h4 class="mt-3">Link do Produto</h4>
-            <a style="text-decoration: none;" target="_blank" class="btn btn-primary" href="<?= $produto['descricao'] ?>" onclick="alerta()">
-                <i class="fa-solid fa-cart-shopping"> <?= $produto['marca'] ?></i>
+            <a style="text-decoration: none;" target="_blank" class="btn btn-primary" href="<?= $produto['descricao'] ?>" onclick="alerta()"><i class="fa-solid fa-cart-shopping"> <?= $produto['marca'] ?></i>
             </a>
             <hr style="color: black">
             <p id="danger">
                 <i class="fa-solid fa-circle-exclamation"></i>
-                <span>
-                    <b>Atenção!</b>
-                </span>
                 <style>
                     #danger {
                         color: white;

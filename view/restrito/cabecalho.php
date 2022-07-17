@@ -20,6 +20,6 @@
       <a href="<?= baseUrl() . "?c=home" ?>" class="text-decoration-none text-white">
         <h1>Lista de Presentes</h1>
       </a>
-      <p>Herivelton & Rubialita</p>
+      <p>Rubialita & Herivelton</p>
     </div>
   </header>

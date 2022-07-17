@@ -1,4 +1,6 @@
-function alerta(){
-    alert("Não se esqueça de adicionar o endereço do casal ao finalizar a compra!");
-    alert("exemplo de endereço");
+function alerta() {
+  alert(
+    "ATENCÃO! Não se esqueça de adicionar o endereço a seguir ao finalizar a compra do presente."
+  );
+  alert("exemplo de endereço");
 }
