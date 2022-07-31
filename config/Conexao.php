@@ -8,11 +8,17 @@ class Conexao
 
     public static function getConnection()
     {
-        $ip = "	sql101.epizy.com";
+        $ip = "sql112.epizy.com";
         $port = "3306";
-        $user = "epiz_32188327";
-        $pass = "M0MFzc2vBtxCS5w";
-        $db = "epiz_32188327_casamentolista";
+        $user = "epiz_32188414";
+        $pass = "uMsoen8vpXUat9";
+        $db = "epiz_32188414_casamento";
+
+        //$ip = "127.0.0.1";
+        //$port = "3306";
+        //$user = "root";
+        //$pass = "";
+        //$db = "casamento";
 
 
         if (!self::$con) {

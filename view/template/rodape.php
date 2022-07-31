@@ -3,7 +3,6 @@
 <footer class="container-fluid pt-4 pb-5" style="background-color: indianred;">
   <div id="ind">
     <p class="text-white text-center">Site desenvolvido por: <b style="color: white">Guilherme C. Araujo</b><br>
-      <a target="_blank" style="text-decoration: none; color: white; margin-top: 1%; " href=""><i class="fa-solid fa-shop"> Encomende seu site</i></a>
     </p>
   </div>
   <style>
