@@ -60,7 +60,7 @@ class Produto
                     $_POST['nome'],
                     $_POST['descricao'],
                     $_POST['preco'],
-                    $_POST['marca'],
+                    $_POST['loja'],
                     $nome_foto,
                     $_POST['categoria']
                 );
@@ -70,7 +70,7 @@ class Produto
                     $_POST['nome'],
                     $_POST['descricao'],
                     $_POST['preco'],
-                    $_POST['marca'],
+                    $_POST['loja'],
                     $nome_foto,
                     $_POST['categoria']
                 );

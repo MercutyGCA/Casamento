@@ -19,8 +19,8 @@
         </div>
 
         <div class="mb-3">
-            <label for="marca" class="form-label">Nome do Site</label>
-            <input type="text" class="form-control" id="marca" name="marca" value="<?= $produto['marca'] ?? "" ?>" required>
+            <label for="loja" class="form-label">Nome do Site</label>
+            <input type="text" class="form-control" id="loja" name="loja" value="<?= $produto['loja'] ?? "" ?>" required>
         </div>
 
         <div class="mb-3">

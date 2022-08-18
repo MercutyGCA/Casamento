@@ -42,7 +42,14 @@
             </div>
 
             <div id="ipd">
-                <b>exemplo</b>
+                <p>
+                    <b>Endereço:</b>
+                </p>
+                Avenida Prefeito Olavo Gomes de Oliveira N° 3810 AP 404 Bl 01 <br>
+                Bairro Jardim Paraíso <br>
+                CEP 37558-600 <br>
+                Pouso Alegre-MG <br>
+                Aos cuidados de Rubialita Arruda
             </div>
             </p>
             <hr style="color: black">
@@ -51,9 +58,9 @@
             </div>
             <h4> Por favor, responda o formulário abaixo primeiro.</h4>
             </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMcQXte9so4Y6QuLmamtzlwUXaQyuNgsB7txtp1jjpFqcvtQ/viewform?embedded=true" width="500" height="36%" frameborder="0" marginheight="0" marginwidth="0" style="border: 3px solid indianred; border-radius: 5px;">Carregando…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMcQXte9so4Y6QuLmamtzlwUXaQyuNgsB7txtp1jjpFqcvtQ/viewform?embedded=true" width="500" height="25%" frameborder="0" marginheight="0" marginwidth="0" style="border: 3px solid indianred; border-radius: 5px;">Carregando…</iframe>
             <h4>Link do Produto</h4>
-            <a style="text-decoration: none;" target="_blank" class="mb-5 btn btn-primary" href="<?= $produto['descricao'] ?>" onclick="alerta()"><i class="fa-solid fa-cart-shopping"> <?= $produto['marca'] ?></i></a>
+            <a style="text-decoration: none;" target="_blank" class="mb-5 btn btn-primary" href="<?= $produto['descricao'] ?>" onclick="alerta()"><i class="fa-solid fa-cart-shopping"> <?= $produto['loja'] ?></i></a>
         </div>
     </div>
 

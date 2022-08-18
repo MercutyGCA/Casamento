@@ -27,14 +27,20 @@
         }
     </style>
     <div class="row row-cols-1 row-cols-md-4 g-4">
-
-        <?php foreach ($produtos    as $produto) : ?>
+        <script>
+            function alerta2() {
+                alert(
+                    "Favor preencher o formulário antes de realizar a compra, assim os noivos poderão saber quem enviou qual presente."
+                );
+            }
+        </script>
+        <?php foreach ($produtos as $produto) : ?>
             <div class="col">
                 <div class="card h-100" style="border: 3px solid indianred">
                     <img src="<?= $produto['foto'] ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text"><?= $produto['nome'] ?></p>
-                        <a onclick='alert("Favor preencher o furmulário antes de realizar a compra, assim os noivos poderão saber quem enviou qual presente.");' href="<?= baseUrl() . "?c=home&m=ver&id=" . $produto['idProduto'] ?>" class="text-decoration-none text-dark stretched-link">
+                        <a onclick="alerta2()" href="<?= baseUrl() . "?c=home&m=ver&id=" . $produto['idProduto'] ?>" class="text-decoration-none text-dark stretched-link">
                             <h5 class="card-title">R$ <?= $produto['preco'] ?></h5>
                         </a>
                     </div>

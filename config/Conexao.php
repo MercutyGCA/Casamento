@@ -8,18 +8,19 @@ class Conexao
 
     public static function getConnection()
     {
+
         $ip = "sql112.epizy.com";
         $port = "3306";
         $user = "epiz_32188414";
         $pass = "uMsoen8vpXUat9";
         $db = "epiz_32188414_casamento";
-
-        //$ip = "127.0.0.1";
-        //$port = "3306";
-        //$user = "root";
-        //$pass = "";
-        //$db = "casamento";
-
+        /*
+        $ip = "127.0.0.1";
+        $port = "3306";
+        $user = "root";
+        $pass = "";
+        $db = "casamento";
+        */
 
         if (!self::$con) {
             // cria uma conexão com o banco de dados no mysql

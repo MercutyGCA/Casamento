@@ -1,5 +1,6 @@
 <?php
 $baseUrl = "http://listadepresentecasamento.42web.io";
+//$baseUrl = "http://localhost/casamento/index.php";
 $controlador_padrao = 'home';
 $controller = ucfirst($_GET['c'] ?? $controlador_padrao);
 $path_controller = "controller/$controller.php";

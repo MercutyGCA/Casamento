@@ -8,7 +8,7 @@
             <tr>
                 <th class="col-6">Nome</th>
                 <th>Preço</th>
-                <th>Marca</th>
+                <th>loja</th>
                 <th>Foto</th>
                 <th>Ações</th>
             </tr>
@@ -18,7 +18,7 @@
                 <tr>
                     <td><?= $produto['nome'] ?></td>
                     <td><?= $produto['preco'] ?></td>
-                    <td><?= $produto['marca'] ?></td>
+                    <td><?= $produto['loja'] ?></td>
 
                     <td>
                         <a href="<?= $produto['foto'] ?>">

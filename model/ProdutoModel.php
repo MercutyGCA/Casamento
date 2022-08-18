@@ -8,11 +8,11 @@ class ProdutoModel
         $this->conexao = Conexao::getConnection();
     }
 
-    function inserir($nome, $descricao, $preco, $marca, $foto, $idCategoria)
+    function inserir($nome, $descricao, $preco, $loja, $foto, $idCategoria)
     {
-        $sql = "INSERT INTO produto (nome, descricao, preco, marca, foto, categoria_idCategoria) values (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO produto (nome, descricao, preco, loja, foto, categoria_idCategoria) values (?, ?, ?, ?, ?, ?)";
         $comando = $this->conexao->prepare($sql);
-        $comando->bind_param("ssdssi", $nome, $descricao, $preco, $marca, $foto, $idCategoria);
+        $comando->bind_param("ssdssi", $nome, $descricao, $preco, $loja, $foto, $idCategoria);
         return $comando->execute();
     }
 
@@ -24,11 +24,11 @@ class ProdutoModel
         return $comando->execute();
     }
 
-    function atualizar($id, $nome, $descricao, $preco, $marca, $foto, $idCategoria)
+    function atualizar($id, $nome, $descricao, $preco, $loja, $foto, $idCategoria)
     {
-        $sql = "UPDATE produto SET nome = ?, descricao = ?, preco = ?, marca = ?, foto = ?, categoria_idCategoria = ? WHERE idProduto = ?";
+        $sql = "UPDATE produto SET nome = ?, descricao = ?, preco = ?, loja = ?, foto = ?, categoria_idCategoria = ? WHERE idProduto = ?";
         $comando = $this->conexao->prepare($sql);
-        $comando->bind_param("ssdssii", $nome, $descricao, $preco, $marca, $foto, $idCategoria, $id);
+        $comando->bind_param("ssdssii", $nome, $descricao, $preco, $loja, $foto, $idCategoria, $id);
         return $comando->execute();
     }
 
